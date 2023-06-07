@@ -1,0 +1,315 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+    transition: 0.5s ease;
+}
+html{
+    scroll-behavior: smooth;
+}
+button:hover{
+    cursor: pointer;
+}
+
+/* Navbar Section */
+.header{
+    padding:1em 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header img{
+    width: 8%;
+}
+.header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    font-size: 1.3em;
+}
+.header nav p{
+    display: inline-block;
+    font-size: 1.04em;
+}
+#menu-btn{
+    display: none;
+}
+
+/* Welcome Section */
+.banner{
+    background:linear-gradient(rgba(0,0,0,0.38),rgba(0,0,0,0.39)),url('./img/highlights-img.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    position: relative;
+    z-index: 1;
+    object-fit: cover;
+}
+.welcome-content{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto 6vw;
+    align-items:start;
+    z-index: 2;
+}
+.heading-container{
+    font-size: 1.5vw;
+    font-weight: bold;
+    line-height: 1.75;
+    letter-spacing: 2px;
+}
+.heading-container h1,.heading-container p,.heading-container h3{
+    color: white;
+}
+.heading-container p{
+    font-size: 1.1em;
+    margin-top: -.3em;
+}
+.heading-container a{
+    color: rgb(255, 221, 0);
+}
+.form-container{
+    width: 35%;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form-container input,.form-container button{
+    width: 80%;
+    margin-bottom: 1.5em;
+    padding: 0.55em;
+    font-size: 1.15vw;
+    border-radius: 6px;
+}
+.form-container input::placeholder{
+    color: black;
+}
+.form-container button{
+    border-radius: 8px;
+    background-color: rgba(9, 136, 175, 0.684);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+/* Overview Section */
+.overview-section{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(227, 241, 253);
+}
+.overview-container{
+    max-width: 1280px;
+    margin:3em auto;
+    padding: 1em 2em;
+    border-radius: 16px;
+    text-align: center;
+    background-color: white;
+    box-shadow: .1em .1em .9em 3px rgba(0,0,0,0.2);
+}
+.overview-info{
+    letter-spacing: 1px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: start;
+    gap:1.2em;
+}
+.overview-info div{
+    margin: .8em;
+}
+.heading-section{
+    position: relative;
+    margin-bottom: 2em;
+}
+.overview-container .overlay-heading{
+    color:rgba(148, 148, 148, 0.3);
+    font-size: 5em;
+    letter-spacing: 5px;
+    font-weight:900;
+    border-bottom: 1px solid grey;
+    display: inline-block;
+}
+.overview-container .normal-h1{
+    position: absolute;
+    bottom:0%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    letter-spacing: 2px;
+    padding-bottom: 0.5em;
+    border-bottom: 4px solid darkblue;
+}
+.overview-container p{
+    font-size: 1.08em;
+    text-align: justify;
+}
+.method1{
+    width: 24%;
+    object-fit: cover;
+    border-radius: 1%;
+}
+.method2{
+    width: 24%;
+    object-fit: cover;
+    border-radius: 1%;
+}
+.overview-images{
+    display: flex;
+    justify-content: center;
+    gap:2em;
+}
+.overview-images img{
+    width: 35%; 
+}
+
+/* Media Queries */
+
+/* Navbar Section*/
+@media screen and (min-width:1400px) {
+    .header p::after{
+        content: "";
+        display: block;
+        height: 3.5px;
+        transform: scaleX(0);
+        background-color:black;
+        transition: transform 300ms;
+    }
+    .header p:hover::after{
+        transform: scaleX(1);
+    }  
+}
+@media screen and (max-width:1400px) {
+    .header{
+        position: relative;
+    }
+    .header nav{
+        position: absolute;
+        display: block;
+        top:99%;
+        left:0;
+        right: 0;
+        z-index: 5;
+        width: 100%;
+        background-color: white;
+    }
+    .navbar-container{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header nav p:nth-child(1){
+        border-top: 1px solid black;
+    }
+    .header nav p{
+        display: block;
+        text-align: center;
+        padding: 0.8em;
+        border-bottom: 1px solid black;
+    }
+    .header nav a:hover{
+        color: darkblue;
+    }
+    .header img{
+        width: 10%;
+    }
+    #menu-btn{
+        display: block;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: 1.3em;
+    }
+    .open-menu{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+@media screen and (max-width:1000px) {
+    .header img{
+        width: 13%;
+    }
+}
+@media screen and (max-width:800px) {
+    .header img{
+        width: 16%;
+    }
+}
+@media screen and (max-width:600px) {
+    .header img{
+        width: 18%;
+    }
+}
+
+/* Welcome Section */
+@media screen and (max-width:1200px) {
+    .welcome-content{
+        width: 90%;
+    }
+    .heading-container{
+        font-size: 2vw;
+    }
+    .form-container{
+        width: 45%;
+    }
+    .form-container input,.form-container button{
+        padding: 0.7em;
+        font-size: 1.45vw;
+    }
+}
+@media screen and (max-width:900px) {
+    .welcome-content{
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5em;
+    }
+    .heading-container{
+        margin-top: 2em;
+        font-size: 2.3vw;
+        text-align: center;
+    }
+    .form-container{
+        width: 60%;
+    }
+    .form-container form{
+        align-items: center;
+    }
+    .form-container input,.form-container button{
+        padding: 0.8em;
+        font-size: 1.8vw;
+    }
+}
+@media screen and (max-width:600px) {
+    .heading-container{
+        font-size: 2.8vw;
+        text-align: center;
+    }
+}
+@media screen and (max-width:580px) {
+    .heading-container{
+        font-size: 3.4vw;
+        text-align: center;
+    }
+    .form-container{
+        width: 80%;
+    }
+    .form-cntainer form{
+        align-items: center;
+    }
+    .form-container input,.form-container button{
+        padding: 1em;
+        font-size: 2vw;
+    }
+}
+
