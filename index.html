@@ -14,48 +14,61 @@
 </head>
 <body>
 
-  <nav class="navbar-container">
-    <p><a href="#home">Home</a></p>
-    <p><a href="#overview">Overview</a></p>
-    <p><a href="#price">PriceList</a></p>
-    <p><a href="#amenities">Amenities</a></p>
-    <p><a href="#highlights">Highlights</a></p>
-    <p><a href="#connectivity">Connectivity</a></p>
-    <p><a href="#location">Location</a></p>
-    <p><a href="#gallery">Gallery</a></p>
-    <p><a href="#contact">Contact Us</a></p>
+  <div class="header">
+    <img src="img/logo.png" alt="">
+    <i id="menu-btn" class="fa-solid fa-bars"></i>
+    <nav class="navbar-container">
+      <p><a href="#home">Home</a></p>
+      <p><a href="#overview">Overview</a></p>
+      <p><a href="#price">PriceList</a></p>
+      <p><a href="#amenities">Amenities</a></p>
+      <p><a href="#highlights">Highlights</a></p>
+      <p><a href="#connectivity">Connectivity</a></p>
+      <p><a href="#location">Location</a></p>
+      <p><a href="#gallery">Gallery</a></p>
+      <p><a href="#contact">Contact Us</a></p>
+    </nav>
+  </div>
 
-  </nav>
-
-
-  <div class="Home-container" id="#home">
-    <h2>Mall of Noida</h2>
-    <h4>Sector-98, Noida Expressway, Noida</h4>
-    <h>Investment Starts from ₹ 11 Lacs* Onwards</h>
-    <p>sir phone numbers</p>
-    <form >
-      <input placeholder="Name" />
-      <input placeholder="E-mail address"/>
-      <input placeholder="Contact number">
-      <input placeholder="Comments" />
-      <button type="submit">Enquire Now</button>
-    </form>
-
+  <!-- Welcome Section -->
+  <div class="banner"></div>
+  <div class="welcome-content"  id="#home">
+    <div class="heading-container">
+      <h1>Mall of Noida</h1>
+      <p>Sector-98, Noida Expressway, Noida</p>
+      <h3>Investment Starts from ₹ 11 Lacs* Onwards</h3>
+      <a>9310207305 / 9354970067</a>
+    </div>
+      <div class="form-container">
+        <form id="formid">
+            <input type="text" id="name" name="name" placeholder="Enter Your Name">
+            <input type="email" id="email" name="email" placeholder="Enter Your Email-id">
+            <input type="number" id="mobile" name="mobile" placeholder="Enter Your Mobile-No">
+            <input type="text" id="comment" name="comment" placeholder="Write down your Comments">
+            <button type="submit" id="submitbtn">Submit</button>
+        </form>
+      </div>
   </div>
     
-
-
-
 <!-- Overview Section -->
-<section id="overview">
-      <h2>Overview</h2>
-        <div class="aboutus">
-      
-          <p>The finest shopping paradise in Noida is Sikka Mall, located on Noida Expressway. The building is an outstanding example of an artistic masterpiece that was designed with the demands of visitors and business investors in mind. This illustrious idea combines technical setups with structures drawn from nature in an effort to provide the best product in the market. Retail stores, offices, a gaming area, and a food court are all available at The Mall of Noida.
+<div class="overview-section" id="overview">
+  <div class="overview-container">
+    <div class="heading-section">
+      <h1 class="overlay-heading">OVERVIEW</h1>
+      <h1 class="normal-h1">Overview</h1>
+    </div>
+    <div class="overview-info">
+      <div class="overview-images">
+        <img class="method1" src="img/gallery-1-sm.jpg" alt="">
+        <img class="method2" src="img/gallery-2-sm.jpg" alt="">
+      </div>
+      <div>
+        <p>The finest shopping paradise in Noida is Sikka Mall, located on Noida Expressway. The building is an outstanding example of an artistic masterpiece that was designed with the demands of visitors and business investors in mind. This illustrious idea combines technical setups with structures drawn from nature in an effort to provide the best product in the market. Retail stores, offices, a gaming area, and a food court are all available at The Mall of Noida.
           The high-end amenities offered here will unquestionably make your every penny worth the investment. The location of the project adds a badge to its impressive list of attributes. For the local residents, it is more accessible because it is located on the Expressway. Also, the property has numerous security features. With guaranteed earnings, this is by far the best property to invest in. Invest today!</p>
-      
-        </div>
-</section>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Pricelist Section  -->
 <section id="price">
@@ -205,7 +218,10 @@
 
 <!-- Gallery Section -->
 <section class="gallery-container" id="gallery">
-  <h1>Gallery</h1>
+  <div class="heading-section">
+    <h1 class="overlay-heading">GALLERY</h1>
+    <h1 class="normal-h1">GALLERY</h1>
+  </div>
   <div class="glide">
     <div class="glide__track" data-glide-el="track">
       <ul class="glide__slides">
