@@ -177,6 +177,64 @@ button:hover{
     width: 35%; 
 }
 
+/* Amenities Section */
+.amenities-container{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(227, 241, 253);
+}
+.amenities .heading-section{
+    position: relative;
+    margin-bottom: 2em;
+}
+.amenities-container .overlay-heading{
+    color:rgba(148, 148, 148, 0.3);
+    font-size: 5em;
+    letter-spacing: 5px;
+    font-weight:900;
+    border-bottom: 1px solid grey;
+    width: 33%;
+    margin: auto;
+    max-width: 1200px;
+    text-align: center;
+}
+.amenities-container .normal-h1{
+    position: absolute;
+    bottom:0%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    letter-spacing: 2px;
+    padding-bottom: 0.5em;
+    border-bottom: 4px solid darkblue;
+}
+.amenities{
+    max-width: 80%;
+    margin:3.5em auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2em;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.amenities div{
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 2em 0;
+    position: relative;
+    height: 19vh;
+}
+.amenities div p{
+    background-color: rgba(0,0,0,0.47);
+    width: 100%;
+    color: white;
+    padding: 1em;
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
 /* Media Queries */
 
 /* Navbar Section*/
