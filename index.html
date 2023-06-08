@@ -10,6 +10,9 @@
 <meta name="keywords" content="Sikka Mall Of Noida, Retail Space." />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="glide.core.min.css">
+
+
 </head>
 
 <body>
@@ -218,29 +221,45 @@
 
 <!-- Gallery Section -->
 <section class="gallery-container" id="gallery">
-
-      <h2>Gallery</h2>
-      <div >
-          <div>
-            <img src="img/gallery-1-sm.jpg"/>
-         </div>
-          <div>
-            <img src="img/gallery-2-sm.jpg" />
-         </div>
-          <div>
-            <img src="img/gallery-3-sm.jpg" />
-         </div>
-   
-      </div>
-   </div>
+  <div class="heading-section">
+    <h1 class="overlay-heading">GALLERY</h1>
+    <h1 class="normal-h1">GALLERY</h1>
+  </div>
+  <div class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide" class="gallery_img"><img src="img/g1.jpg"></li>
+        <li class="glide__slide" class="gallery_img"><img src="img/g2.jpg"></li>
+        <li class="glide__slide" class="gallery_img"><img src="img/g3.jpg"></li>
+        <li class="glide__slide" class="gallery_img"><img src="img/g4.jpg"></li>
+        <li class="glide__slide" class="gallery_img"><img src="img/g5.jpg"></li>
+        <li class="glide__slide" class="gallery_img"><img src="img/g6.jpg"></li>
+      </ul>
+    </div>
+  </div>
 </section>
 
 <!-- Footer Section -->
   <section class="Disclaimer" id="contact">
     <!--should contain a form,2 cotact numbers and email id-->
   </section>
-</body>
 
-<script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script>
+    const config ={
+      type: 'carousel',
+      perView: 1,
+      autoplay:1800,
+      breakpoints:{
+        800: {
+          perView: 1
+        }
+        
+      }
+    }
+    new Glide('.glide', config).mount()
+  </script>
+
+</body>
 
 </html>
