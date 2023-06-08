@@ -1,17 +1,128 @@
-*{
-    margin: 0 auto;
+/*price-section*/
+
+.price-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    
+    
+    
 }
-.aboutsection{
-    margin: 5% 12%;
+
+.price_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:1.5rem;
+    /*background-color: #F1FFE7;*/
 }
-.row{
-    padding: 2%;
+
+.price-container h2{
+    margin-left: 50%;
 }
-.row span {
-    font-size: 50px;
-    margin-bottom: 3%;
-}
-.aboutus h1{
-    font-size: x-large;
+
+
+.price_heading{
+    position: relative;
     text-align: center;
+    background-color: #1A1B41;
+}
+
+.price_heading .overlay-heading{
+    color:rgba(241, 255, 231, 0.1);
+    font-size: 5em;
+    letter-spacing: 5px;
+    font-weight:900;
+    border-bottom: 1px solid #272851;
+    display: inline-block;
+}
+.price_heading .normal-h1{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0%);
+    letter-spacing: 2px;
+    padding-bottom: 0.5em;
+    border-bottom: 4px solid #F1FFE7;
+    margin-bottom: 66.4px;
+}
+
+
+.price_item h3{
+    /*border: 1px solid black;*/
+    font-size: 27px;
+    padding: 0.8rem;
+    text-align: center;
+    box-shadow: .1em .1em .9em 3px rgba(0,0,0,0.2);
+    background-color: #1A1B41;
+    color: #F1FFE7;
+
+}
+
+.price_item{
+    /*border: 1px solid black;*/
+    font-family: sans-serif;
+    min-width: 300px;
+}
+
+.price_item_info{
+    /*border: 1px solid black;*/
+    text-align: center;
+    box-shadow: .1em .1em .9em 3px rgba(0,0,0,0.2);
+    background-color:  #F1FFE7;
+}
+
+.price_item_info h4{
+    font-size: 20px;
+    padding-top: 2rem;
+   
+    text-align: center;
+}
+
+.price_item_info button{
+    margin: 2rem;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #1A1B41;
+    border: none;
+    color: #F1FFE7;
+    border-radius: 5px;
+
+}
+
+.price_item_info button:hover{
+    cursor: pointer;
+}
+
+.space{
+    margin: 5rem;
+}
+
+/*Floor Plan */
+
+.floor-plan-heading{
+    position: relative;
+    text-align: center;
+}
+
+
+.floor-plan-heading .overlay-heading{
+    color:rgba(26, 27, 65, 0.1);
+    font-size: 5em;
+    letter-spacing: 5px;
+    font-weight:900;
+    border-bottom: 1px solid #1A1B41;
+    display: inline-block;
+}
+.floor-plan-heading .normal-h1{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0%);
+    letter-spacing: 2px;
+    padding-bottom: 0.5em;
+    border-bottom: 4px solid #F1FFE7;
+    margin-bottom: 66.4px;
 }
