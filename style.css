@@ -313,6 +313,81 @@ button:hover{
     display: none;
 }
 
+/* Price Section */
+/* .price-container{
+    text-align: center;
+    padding: 2em;  
+}
+.price_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:1.5rem;
+}
+.price_heading{
+    position: relative;
+    text-align: center;
+}
+.price_heading .overlay-heading{
+    color:rgba(148, 148, 148, 0.3);
+    font-size: 5em;
+    letter-spacing: 5px;
+    font-weight:900;
+    border-bottom: 1px solid grey;
+    display: inline-block;  
+}
+.price_heading .normal-h1{
+    position: absolute;
+    bottom:0%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    letter-spacing: 2px;
+    padding-bottom: 0.5em;
+    border-bottom: 4px solid darkblue;
+    font-size: 2em;
+}
+.price_item h3{
+    font-size: 27px;
+    padding: 0.8rem;
+    text-align: center;
+    box-shadow: .1em .1em .9em 3px rgba(0,0,0,0.2);
+    background-color: #1A1B41;
+    color: #F1FFE7;
+}
+.price_item{
+    font-family: sans-serif;
+    min-width: 300px;
+}
+.price_item_info{
+    text-align: center;
+    box-shadow: .1em .1em .9em 3px rgba(0,0,0,0.2);
+    background-color:  #F1FFE7;
+}
+.price_item_info h4{
+    font-size: 20px;
+    padding-top: 2rem;
+    text-align: center;
+}
+.price_item_info button{
+    margin: 2rem;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #1A1B41;
+    border: none;
+    color: #F1FFE7;
+    border-radius: 5px;
+}
+.price_item_info button:hover{
+    cursor: pointer;
+    opacity: 85%;
+}
+.space{
+    margin: 5rem;
+} */
+
+
 /* Media Queries */
 
 /* Navbar Section*/
@@ -545,4 +620,42 @@ button:hover{
     }
 }
 
+
+/* Copy this one alone */
 /* Overview Section */
+@media screen and (min-width:800px) {
+    .overview-section-medium{
+        display: none;
+    }
+}
+@media screen and (max-width:800px) {
+    .overview-section-medium{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        background-color: #f1ffe7;
+        padding: 2em 2.5em;
+        text-align: center;
+    }
+    .overview-section-medium img{
+        width:70%;
+        text-align: center;
+        margin: auto;
+    }
+    .overview-section{
+        display: none;
+    }
+    .overview-section-medium .overlay-heading{
+        display: none;
+    }
+    .overview-section-medium .normal-h1{
+        display: none;
+    }
+    .overview-section-medium .medium-h1{
+        margin: 1em;
+        margin-bottom: 0.5em;
+        padding-bottom: 0.5em;
+        display: inline-block;
+        border-bottom: 4px solid darkblue;
+    }
+}
