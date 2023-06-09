@@ -102,10 +102,15 @@
 
 
 <!-- Floor Plan Section -->
-<section id="floor-plan">
+<section class="floor-plan-container" id="floor-plan">
       <div class="floor-plan-heading">
         <h1 class="overlay-heading">FLOOR PLAN</h1>
         <h4 class="normal-h1">floor plan</h4>
+      </div>
+
+      <div class="floor-image-container">
+        <img src="img\floor2-sm.jpg">
+        <img src="img\floor3-sm.jpg">
       </div>
 
     
@@ -247,8 +252,25 @@
 -->
 
 <!-- Footer Section -->
-  <section class="Disclaimer" id="contact">
-    <!--should contain a form,2 cotact numbers and email id-->
+  <section class="footer" id="contact">
+    <div class="footer-contact">
+      <h3>Contact us</h3>
+      <p>1234-5678</p>
+      <p>1234-5678</p>
+      <p>johdoe@gmail.com</p>
+    </div>
+
+
+    <div class="footer-form-container">
+      <h3>Enquire Now</h3>
+      <form class="footer-form" id="formid">
+          <input type="text" id="name" name="name" placeholder="Enter Your Name">
+          <input type="email" id="email" name="email" placeholder="Enter Your Email-id">
+          <input type="number" id="mobile" name="mobile" placeholder="Enter Your Mobile-No">
+          <input type="text" id="comment" name="comment" placeholder="Write down your Comments">
+          <button type="submit" id="submitbtn">Submit</button>
+      </form>
+    </div>
   </section>
 
 
