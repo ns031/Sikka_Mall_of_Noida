@@ -462,7 +462,8 @@ button:hover{
     transform: translate(-50%,0%);
     letter-spacing: 2px;
     padding-bottom: 0.5em;
-    border-bottom: 4px solid #7a5833;
+    border-bottom: 4px solid darkblue;
+    /* border-bottom: 4px solid #7a5833; */
     font-size: 2em;
 }
 .highlights-container{
@@ -485,7 +486,8 @@ button:hover{
 .connectivity-section{
     position: relative;
     overflow: hidden;
-    background-color: #f4e9e3;
+    background-color: #f1ffe7;
+    /* background-color: #f4e9e3; */
 }
 .connectivity-container{
     text-align: center;
@@ -534,7 +536,7 @@ button:hover{
     transform: translate(-50%,0%);
     letter-spacing: 2px;
     padding-bottom: 0.5em;
-    border-bottom: 4px solid #7a5833;
+    border-bottom: 4px solid darkblue;
     font-size: 2em;
 }
 .map-container img{
