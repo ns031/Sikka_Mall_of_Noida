@@ -129,46 +129,57 @@
     <h1 class="overlay-heading">AMENITIES</h1>
     <h1 class="normal-h1">Amenities</h1>
   </div>
-  <div class="amenities">   
-    <div style="background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)),url('img/Amenities-1.jpg');">
+  <div class="amenities">
+    <div class="amenity">
+      <img src="img/Amenities-1.jpg" alt=""> 
       <p>Premium Food Court, Restaurants & Coffee Shops</p>
     </div>
-    <div style="background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)),url('img/Amenities-2.jpg');">
+    <div class="amenity">
+      <img src="img/Amenities-2.jpg" alt="">
       <p>Multilevel Car Parking</p>
     </div>
-    <div style="background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)),url('img/Amenities-3.jpg');">
+    <div class="amenity">
+      <img src="img/Amenities-3.jpg" alt="">
       <p>Chemist & Anchor Stores</p>
     </div>
-    <div style="background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)),url('img/Amenities-4.jpg');">
+    <div class="amenity">
+      <img src="img/Amenities-4.jpg" alt="">
       <p>Dedicated Entrance Lobby with Finest Ambiance</p>
     </div>
-    <div style="background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)),url('img/Amenities-5.jpg');">
+    <div class="amenity">
+      <img src="img/Amenities-5.jpg" alt="">
       <p>Exclusive Concierge Services Available</p>
     </div> 
-    <div style="background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)),url('img/Amenities-6.jpg');">
+    <div class="amenity">
+      <img src="img/Amenities-6.jpg" alt="">
       <p>High-Tech Multiplex</p>
     </div>
-    <div style="background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)),url('img/Amenities-7.jpg');">
+    <div class="amenity">
+      <img src="img/Amenities-7.jpg" alt="">
       <p>Landscaped Courts with Sit-out Spaces</p>
     </div>
-    <div style="background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)),url('img/Amenities-8.jpg');">
+    <div class="amenity">
+      <img src="img/Amenities-8.jpg" alt="">
       <p>Sports Facilities</p>
     </div>
-    <div style="background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)),url('img/Amenities-9.jpg');">
+    <div class="amenity">
+      <img src="img/Amenities-9.jpg" alt="">
       <p>Sprawling Golf Courses & Delhi- Noida Skyline Views</p>
     </div>
-    <div style="background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)),url('img/Amenities-10.jpg');"> 
+    <div class="amenity"> 
+      <img src="img/Amenities-10.jpg" alt="">
       <p>Finely Designed Atrium</p>
     </div>
-    <div style="background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)),url('img/Amenities-11.jpg');"> 
+    <div class="amenity">
+      <img src="img/Amenities-11.jpg" alt=""> 
       <p>Observatory Deck</p>
     </div>
-    <div style="background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)),url('img/Amenities-12.jpg');"> 
+    <div class="amenity"> 
+      <img src="img/Amenities-12.jpg" alt="">
       <p>Child Care</p>
     </div>
   </div>
 </section>
-<br><br><br>
 
 <!-- Highlights Section -->
 <section class="highlights-section" id="highlights">
@@ -261,7 +272,30 @@
   </div>
 </section>
 
+<!-- Form Popup Section -->
+<div class="form-popup" id="form-popup">
+  <div class="form-content animate">
+      <img src="img/gallery-1-sm.jpg" alt="">
+      <div class="form-heading">
+          <span class="close-modal" id="close-form" title="Close Signup Form">&times;</span>
+          <h1>Mall of Noida</h1>
+          <p>Sector-98, Noida Expressway, Noida</p>
+          <h2>Investment Starts from ₹ 11 Lacs* Onwards</h2>
+          <form id="formid1">
+              <input type="text" name="name1" id="name1" placeholder="Enter Your Name" required>
+              <input type="email" name="email1" id="email1" placeholder="Enter Your Email-id" required>
+              <input type="number" name="mobile1" id="mobile1" placeholder="Enter Your Mobile-No" required>
+              <input type="text" name="comment1" id="comment1" placeholder="Write down your Comments" required>
+              <button type="submit" id="submitbtn1">Submit</button>
+          </form>
+      </div>
+  </div>
+</div>
+
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="script.js"></script>
+
   <script>
     const config ={
       type: 'carousel',
