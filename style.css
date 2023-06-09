@@ -78,7 +78,7 @@ button:hover{
     margin-top: -.3em;
 }
 .heading-container a{
-    color: rgb(255, 221, 0);
+    color: #c5f65c;
 }
 .form-container{
     width: 35%;
@@ -100,7 +100,7 @@ button:hover{
 }
 .form-container button{
     border-radius: 8px;
-    background-color: rgba(9, 136, 175, 0.684);
+    background-color: #1A1B41;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
 }
@@ -110,7 +110,8 @@ button:hover{
     width: 100%;
     position: relative;
     overflow: hidden;
-    background-color: rgb(227, 241, 253);
+    background-color: #f1ffe7;
+    padding: 2em;
 }
 .overview-container{
     max-width: 1280px;
@@ -133,7 +134,7 @@ button:hover{
 .overview-info div{
     margin: .8em;
 }
-.heading-section{
+.overview-container .heading-section{
     position: relative;
     margin-bottom: 2em;
 }
@@ -151,7 +152,6 @@ button:hover{
     left: 50%;
     transform: translate(-50%,0%);
     letter-spacing: 2px;
-    padding-bottom: 0.5em;
     border-bottom: 4px solid darkblue;
 }
 .overview-container p{
@@ -179,12 +179,13 @@ button:hover{
 
 /* Amenities Section */
 .amenities-container{
-    width: 100%;
     position: relative;
-    overflow: hidden;
-    background-color: rgb(227, 241, 253);
+    text-align: center;
+    max-width: 1300px;
+    margin: 2em auto;
+    margin-bottom: 0;
 }
-.amenities .heading-section{
+.amenities-container .heading-section{
     position: relative;
     margin-bottom: 2em;
 }
@@ -194,10 +195,7 @@ button:hover{
     letter-spacing: 5px;
     font-weight:900;
     border-bottom: 1px solid grey;
-    width: 33%;
-    margin: auto;
-    max-width: 1200px;
-    text-align: center;
+    display: inline-block;
 }
 .amenities-container .normal-h1{
     position: absolute;
@@ -205,34 +203,114 @@ button:hover{
     left: 50%;
     transform: translate(-50%,0%);
     letter-spacing: 2px;
-    padding-bottom: 0.5em;
     border-bottom: 4px solid darkblue;
+    font-size: 2em;
 }
 .amenities{
-    max-width: 80%;
-    margin:3.5em auto;
+    margin: 3em 2em;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-content: center;
     align-items: center;
     text-align: center;
+    grid-gap: 2em;
 }
-.amenities div{
-    border: 2px solid black;
-    border-radius: 8px;
-    padding: 2em 0;
-    position: relative;
-    height: 19vh;
-}
-.amenities div p{
-    background-color: rgba(0,0,0,0.47);
+.amenities img{
     width: 100%;
+}
+.amenities p{
+    line-height: 1.2;
+    margin: 1em 0.5em;
+    white-space: nowrap;
+}
+
+/* Form Popup Section */
+.form-popup{
+    position: fixed;
+    z-index: 10;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.form-popup .form-content{
+    width: 48%;
+    background-color: white;
+    margin: 6em auto;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+.form-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.form-content img{
+    width: 95%;
+    height: 70vh;
+    object-fit: cover;
+    filter: grayscale(0.5);
+}
+.form-heading{
+    line-height: 2.3em;
+}
+.form-heading form{
+    margin: 2em 0;
+}
+.form-heading form input{
+    display: block;
+    border:1px solid black;
+    padding: 0.5em;
+    font-size: 1.24vw;
+    width: 95%;
+    margin: 0.8em 0;
+    border-radius: 5px;
+}
+.form-heading p{
+    color:#272851;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+.form-heading h2{
+    color: rgb(1, 119, 1);
+}
+.form-heading form button{
+    width: 95%;
+    background-color: rgb(5, 121, 142);
+    background-color:#1A1B41;
+    padding: 0.5em;
+    font-size: 1.24vw;
     color: white;
-    padding: 1em;
-    line-height: 1.5;
-    font-size: 1.1em;
+    border-radius: 5px;
+}
+.form-heading form input::placeholder{
+    color: black;
+}
+.close-modal{
+    display: block;
+    text-align: end;
+    margin: 0.4em 0.3em;
+    font-size: 2.5em;
+}
+.close-modal:hover{
+    cursor: pointer;
+}
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}   
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+.form-popup{
+    display: none;
 }
 
 /* Media Queries */
@@ -373,6 +451,21 @@ button:hover{
 /* gallery */
 .gallery-container{
     text-align: center;
+    max-width: 900px;
+    margin: 2em auto;
+}
+.glide__slide{
+    height: 90vh;
+}
+.glide__slide img{
+    width: 100%;
+    border-radius: 2%;
+    text-align: center;
+    border: 2px solid;
+}
+.gallery-container .heading-section{
+    position: relative;
+    margin-bottom: 2em;
 }
 .gallery-container .overlay-heading{
     color:rgba(148, 148, 148, 0.3);
@@ -390,4 +483,66 @@ button:hover{
     letter-spacing: 2px;
     padding-bottom: 0.5em;
     border-bottom: 4px solid darkblue;
+    font-size: 2em;
 }
+
+/* Form Popup Section */
+@media screen and (max-width:1300px) {
+    .form-popup .form-content{
+        width:80%;
+        position: relative;
+    }
+    .close-modal{
+        position: absolute;
+        top:0;
+        right: 0;
+    }
+    .form-heading form input,.form-heading form button{
+        padding: 0.6em;
+        font-size: 1.45vw;
+    }
+    .form-heading p{
+        font-size: 1.4em;
+    }
+}
+@media screen and (max-width:1000px) {
+    .form-heading form input,.form-heading form button{
+        padding: 0.75em;
+        font-size: 1.75vw;
+    }
+    .form-heading p{
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width:800px) {
+    .form-popup .form-content{
+        width:95%;
+        position: relative;
+    }
+    .form-content img{
+        height: 60vh;
+    }
+    .form-heading form input,.form-heading form button{
+        font-size: 1.95vw;
+    }
+    .form-heading{
+        margin-top: 2.5em;
+    }
+}
+@media screen and (max-width:500px) {
+    .form-heading form input,.form-heading form button{
+        font-size: 3.5vw;
+    }
+    .form-content img{
+        display: none;
+    }
+    .form-popup .form-content{
+        padding: 1em;
+        margin: 4em auto;
+    }
+    .form-content{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Overview Section */
