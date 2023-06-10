@@ -111,7 +111,7 @@ button:hover{
     position: relative;
     overflow: hidden;
     background-color: #f1ffe7;
-    padding: 2em;
+    padding: 1em;
 }
 .overview-container{
     max-width: 1280px;
@@ -152,7 +152,7 @@ button:hover{
     left: 50%;
     transform: translate(-50%,0%);
     letter-spacing: 2px;
-    border-bottom: 4px solid darkblue;
+    border-bottom: 4px solid #7a5833;
 }
 .overview-container p{
     font-size: 1.08em;
@@ -203,7 +203,7 @@ button:hover{
     left: 50%;
     transform: translate(-50%,0%);
     letter-spacing: 2px;
-    border-bottom: 4px solid darkblue;
+    border-bottom: 4px solid #7a5833;
     font-size: 2em;
 }
 .amenities_bottom{
@@ -255,7 +255,7 @@ button:hover{
     left: 50%;
     transform: translate(-50%,0%);
     letter-spacing: 2px;
-    border-bottom: 4px solid darkblue;
+    border-bottom: 4px solid #7a5833;
     font-size: 2em;
 }
 .amenities-wrap{
@@ -369,12 +369,10 @@ button:hover{
     display: none;
 }
 
-/*price-section*/
-
+/* PriceList Section */
 .price-container{
-    display: flex;
-    flex-direction: column;
-    margin-top: 6rem;   
+    text-align: center;
+    padding: 2em;   
 }
 .price_items{
     display: flex;
@@ -383,51 +381,46 @@ button:hover{
     align-items: center;
     flex-wrap: wrap;
     padding:1.5rem;
-    /*background-color: #F1FFE7;*/
-}
-.price-container h2{
-    margin-left: 50%;
 }
 .price_heading{
     position: relative;
     text-align: center;
-    background-color: #1A1B41;
+    margin-bottom: 2em;
+    margin:0;
 }
 .price_heading .overlay-heading{
-    color:rgba(241, 255, 231, 0.1);
+    color:rgba(148, 148, 148, 0.3);
     font-size: 5em;
     letter-spacing: 5px;
     font-weight:900;
-    border-bottom: 1px solid #272851;
+    border-bottom: 1px solid grey;
     display: inline-block;
 }
 .price_heading .normal-h1{
     position: absolute;
-    bottom: 0;
+    bottom:0%;
     left: 50%;
     transform: translate(-50%,0%);
     letter-spacing: 2px;
     padding-bottom: 0.5em;
-    border-bottom: 4px solid #F1FFE7;
-    margin-bottom: 66.4px;
+    border-bottom: 4px solid #7a5833;
+    font-size: 2em;
 }
 .price_item h3{
-    /*border: 1px solid black;*/
     font-size: 27px;
     padding: 0.8rem;
     text-align: center;
     box-shadow: .1em .1em .9em 3px rgba(0,0,0,0.2);
     background-color: #1A1B41;
     color: #F1FFE7;
-
+    margin-bottom: 1rem;
 }
 .price_item{
-    /*border: 1px solid black;*/
     font-family: sans-serif;
     min-width: 300px;
+    margin: 1.2rem;
 }
 .price_item_info{
-    /*border: 1px solid black;*/
     text-align: center;
     box-shadow: .1em .1em .9em 3px rgba(0,0,0,0.2);
     background-color:  #F1FFE7;
@@ -435,7 +428,7 @@ button:hover{
 .price_item_info h4{
     font-size: 20px;
     padding-top: 2rem;
-   
+    margin-bottom: 1.5em;   
     text-align: center;
 }
 .price_item_info button{
@@ -446,53 +439,52 @@ button:hover{
     border: none;
     color: #F1FFE7;
     border-radius: 5px;
-
 }
 .price_item_info button:hover{
     cursor: pointer;
     opacity: 85%;
 }
-.space{
-    margin: 5rem;
-}
+
 
 /*Floor Plan */
-
 .floor-plan-container{
-    padding-bottom: 30px;
+    text-align: center;
+    padding: 2em; 
 }
 .floor-plan-heading{
     position: relative;
     text-align: center;
-    background-color: #272851;
+    margin-bottom: 2em;
+    margin:0;
 }
 .floor-plan-heading .overlay-heading{
-    color:rgba(241, 255, 231, 0.1);
+    color:rgba(148, 148, 148, 0.3);
     font-size: 5em;
     letter-spacing: 5px;
     font-weight:900;
-    border-bottom: 1px solid #1A1B41;
+    border-bottom: 1px solid grey;
     display: inline-block;
 }
 .floor-plan-heading .normal-h1{
     position: absolute;
-    bottom: 0;
+    bottom:0%;
     left: 50%;
     transform: translate(-50%,0%);
     letter-spacing: 2px;
     padding-bottom: 0.5em;
-    border-bottom: 4px solid #F1FFE7;
-    margin-bottom: 66.4px;
+    border-bottom: 4px solid #7a5833;
+    font-size: 2em;
 }
 .floor-image-container{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-top: 2em;
 }
 .floor-image-container img{
     max-width: 450px;
    margin: 2rem;
-   width: 100%;
+   width: 80%;
 }
 
 /* Highlights Section */
@@ -565,7 +557,7 @@ button:hover{
 .connectivity-column{
     margin: 0px 100px 0px 0px;
     text-align: left;
-    line-height: 30px;
+    line-height: 2;
 }
 .connectivity-column ul{
     margin-left: 4%;
@@ -634,11 +626,11 @@ button:hover{
     transform: translate(-50%,0%);
     letter-spacing: 2px;
     padding-bottom: 0.5em;
-    border-bottom: 4px solid darkblue;
+    border-bottom: 4px solid #7a5833;
     font-size: 2em;
 }
 
-/*footer section*/
+/*Footer Section*/
 
 .footer{
     display: flex;
@@ -659,8 +651,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-left: 15px;
+    flex-wrap: wrap;  
     align-items: center;
 }
 .footer-form-container h3{
@@ -693,9 +684,14 @@ button:hover{
     color: #F1FFE7;
     text-align: center;
 }
+.footer-contact p{
+    margin: 1em;
+    color: #F1FFE7;
+}
 .footer-contact h3{
     border-bottom: 1px solid gray;
     padding: 5px;
+    color: #F1FFE7;
 }
 
 /* Media Queries */
@@ -741,7 +737,7 @@ button:hover{
         border-bottom: 1px solid black;
     }
     .header nav a:hover{
-        color: darkblue;
+        color: #7a5833;
     }
     .header img{
         width: 10%;
@@ -868,8 +864,11 @@ button:hover{
         margin-bottom: 0.5em;
         padding-bottom: 0.5em;
         display: inline-block;
-        border-bottom: 4px solid darkblue;
+        border-bottom: 4px solid #7a5833;
         font-size: 2em;
+    }
+    .overview-section-medium .overview-info{
+        line-height: 1.75;
     }
 }
 
@@ -921,7 +920,7 @@ button:hover{
         margin-bottom: 0.5em;
         padding-bottom: 0.5em;
         display: inline-block;
-        border-bottom: 4px solid darkblue;
+        border-bottom: 4px solid #7a5833;
         font-size: 2em;
     }
 }
@@ -977,6 +976,12 @@ button:hover{
         width: 400px;
     }
 }
+@media screen and (max-width:700px) {
+    .map-container img{
+        height: 100%;
+        width: 100%;
+    }
+}
 @media screen and (min-width:800px){
     .connectivity-section .medium-h1{
         display: none;
@@ -994,26 +999,35 @@ button:hover{
     }
     .connectivity-section .medium-h1{
         margin: 1em;
-        margin-bottom: 0.5em;
         padding-bottom: 0.5em;
         display: inline-block;
-        border-bottom: 4px solid darkblue;
+        border-bottom: 4px solid #7a5833;
         font-size: 2em;
+    }
+    .connectivity-container .heading-section{
+        margin-bottom: 0;   
     }
 }
 
-/* footer */
+/* Footer Section */
 @media screen and (min-width:350px) and (max-width:750px) {
     .footer{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     .footer-form-container{
         width: 80%;
-    } 
+        margin-top: 1.5em;
+    }
+    .footer-form input{
+        width: 80%;
+    }
+    .footer-form{
+        align-items: center;
+    }
 }
+
 
 /* Form Popup Section */
 @media screen and (max-width:1300px) {
@@ -1102,7 +1116,7 @@ button:hover{
         margin-bottom: 0.5em;
         padding-bottom: 0.5em;
         display: inline-block;
-        border-bottom: 4px solid darkblue;
+        border-bottom: 4px solid #7a5833;
         font-size: 2em;
     }
 }
@@ -1151,7 +1165,73 @@ button:hover{
         margin-bottom: 0.2em;
         padding-bottom: 0.5em;
         display: inline-block;
-        border-bottom: 4px solid darkblue;
+        border-bottom: 4px solid #7a5833;
+        font-size: 2em;
+    }
+}
+
+/* PriceList Section */
+@media screen and (min-width:350px) and (max-width:750px) {
+    .price-container{
+        padding: 0;
+    }
+    .price_heading h1:nth-of-type(1){
+        display: none;
+    }    
+    .price_heading .normal-h1{
+        width: 100%;
+        background-color: #272851;
+        height: 95px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 25px;
+        color: #F1FFE7;
+        margin: 0;       
+    }   
+}
+@media screen and (min-width:800px){
+    .price-container .medium-h1{
+        display: none;
+    }
+}
+@media screen and (max-width:800px) {
+    .price-container .overlay-heading{
+        display: none;
+    }
+    .price-container .normal-h1{
+        display: none;
+    }
+    .price-container .medium-h1{
+        margin: 1em;
+        margin-bottom: 0.2em;
+        padding-bottom: 0.5em;
+        display: inline-block;
+        border-bottom: 4px solid #7a5833;
+        font-size: 2em;
+    }
+}
+
+/* Floor Plan Section */
+@media screen and (min-width:800px){
+    .floor-plan-container .medium-h1{
+        display: none;
+    }
+}
+@media screen and (max-width:800px) {
+    .floor-plan-container .overlay-heading{
+        display: none;
+    }
+    .floor-plan-container .normal-h1{
+        display: none;
+    }
+    .floor-plan-container .medium-h1{
+        margin: 1em;
+        margin-bottom: 0.2em;
+        padding-bottom: 0.5em;
+        display: inline-block;
+        border-bottom: 4px solid #7a5833;
         font-size: 2em;
     }
 }

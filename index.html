@@ -10,11 +10,16 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="glide.core.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    import Swal from 'sweetalert2';
+    const Swal=require('sweetalert2');
+</script>
 
 </head>
 <body>
 
-  <div class="header">
+  <div class="header" id="home">
     <img src="img/logo.png" alt="">
     <i id="menu-btn" class="fa-solid fa-bars"></i>
     <nav class="navbar-container">
@@ -32,7 +37,7 @@
 
   <!-- Welcome Section -->
   <div class="banner"></div>
-  <div class="welcome-content"  id="#home">
+  <div class="welcome-content">
     <div class="heading-container">
       <h1>Mall of Noida</h1>
       <p>Sector-98, Noida Expressway, Noida</p>
@@ -92,53 +97,36 @@
 <!-- Pricelist Section  -->
 <section class="price-container" id="price">
   <div class="price_heading">
-    <h1 class="overlay-heading">PRICE</h1>
-    <h1 class="normal-h1">Price</h1>
-
-  </div>
-  
+    <h1 class="overlay-heading">PRICELIST</h1>
+    <h1 class="normal-h1">Pricelist</h1>
+    <h1 class="medium-h1">Pricelist</h1>
+  </div> 
   <div class="price_items">
-
     <div class="price_item">
       <h3>Food Court</h3>
       <div class="price_item_info">
         <h4>Price</h4>
         <p>On Request</p>
-        <button type="submit">Price Breakup</button>
+        <button type="submit" id="price-btn-1">Price Breakup</button>
       </div>
-    </div>
-
+    </div>    
     <div class="price_item">
       <h3>Office Space</h3>
       <div class="price_item_info">
         <h4>Price</h4>
         <p>On Request</p>
-        <button type="submit">Price Breakup</button>
+        <button type="submit" id="price-btn-2">Price Breakup</button>
       </div>
     </div>
-
     <div class="price_item">
       <h3>Commercial Space</h3>
       <div class="price_item_info">
         <h4>Price</h4>
         <p>On Request</p>
-        <button type="submit">Price Breakup</button>
+        <button type="submit" id="price-btn-3">Price Breakup</button>
       </div>
     </div>    
   </div>              
-</section>
- 
-<!-- Floor Plan Section -->
-<section class="floor-plan-container" id="floor-plan">
-  <div class="floor-plan-heading">
-    <h1 class="overlay-heading">FLOOR PLAN</h1>
-    <h4 class="normal-h1">floor plan</h4>
-  </div>
-
-  <div class="floor-image-container">
-    <img src="img\floor2-sm.jpg">
-    <img src="img\floor3-sm.jpg">
-  </div>
 </section>
 
 <!-- Amenities Section -->
@@ -148,7 +136,7 @@
     <h1 class="normal-h1">Amenities</h1>
   </div>
   <div class="amenities_bottom">
-      <img src="img\gallery-2-sm.jpg">
+      <img src="img/gallery-2-sm.jpg">
       <div class="amenities">
         <div class="amenity">
           <p>Premium Food Court, Restaurants & Coffee Shops</p>
@@ -282,11 +270,25 @@
         <li>IGI Airport- 40 mins drive</li>
         </ul>    
         </div>
-        <div class="map-container" id="location">
+        <div class="map-container">
           <h2>Location Map</h2> 
           <img src="img/location-map-small.jpg" />
         </div>
       </div>
+  </div>
+</section>
+
+<!-- Floor Plan Section -->
+<section class="floor-plan-container" id="location">
+  <div class="floor-plan-heading">
+    <h1 class="overlay-heading">FLOOR PLAN</h1>
+    <h4 class="normal-h1">Floor Plan</h4>
+    <h4 class="medium-h1">Floor Plan</h4>
+  </div>
+
+  <div class="floor-image-container">
+    <img src="img/floor2-sm.jpg">
+    <img src="img/floor3-sm.jpg">
   </div>
 </section>
 
@@ -315,20 +317,18 @@
 <section class="footer" id="contact">
   <div class="footer-contact">
     <h3>Contact us</h3>
-    <p>1234-5678</p>
-    <p>1234-5678</p>
-    <p>johdoe@gmail.com</p>
+    <p>9310207305</p>
+    <p>9354970067</p>
+    <p>contact@savianmoney.com</p>
   </div>
-
-
   <div class="footer-form-container">
     <h3>Enquire Now</h3>
-    <form class="footer-form" id="formid">
-        <input type="text" id="name" name="name" placeholder="Enter Your Name">
-        <input type="email" id="email" name="email" placeholder="Enter Your Email-id">
-        <input type="number" id="mobile" name="mobile" placeholder="Enter Your Mobile-No">
-        <input type="text" id="comment" name="comment" placeholder="Write down your Comments">
-        <button type="submit" id="submitbtn">Submit</button>
+    <form class="footer-form" id="formid2">
+        <input type="text" id="name2" name="name2" placeholder="Enter Your Name">
+        <input type="email" id="email2" name="email2" placeholder="Enter Your Email-id">
+        <input type="number" id="mobile2" name="mobile2" placeholder="Enter Your Mobile-No">
+        <input type="text" id="comment2" name="comment2" placeholder="Write down your Comments">
+        <button type="submit" id="submitbtn2">Submit</button>
     </form>
   </div>
 </section>
