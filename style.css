@@ -834,7 +834,6 @@ button:hover{
     }
 }
 @media screen and (min-width:700px) and (max-width:1100px){
-    
     .highlights-build{
         background-color: white;
         margin: 8% 10%;
@@ -851,7 +850,21 @@ button:hover{
 @media screen and (max-width:650px){
     .connectivity-container{
         text-align: left;
+        width: 420px;
     }
+    /* .connectivity-container .overlay-heading{
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    display: inline-block;
+    }
+    .connectivity-container .normal-h1{
+        position: absolute;
+        transform: translate(-50%,0%);
+        letter-spacing: 1px;
+        padding-bottom: 0.15em;
+        border-bottom: 2.5px solid darkblue;
+        font-size: 1.5em;
+    } */
     .connectivity-wrap{
         display: flex;
         flex-direction: column;
@@ -865,13 +878,30 @@ button:hover{
     }
     .map-container img{
         height: 250px;
-        width: 400px;
+        width: 320px;
     }
 }
-@media screen and (min-width:650px) and (max-width:900px){
+@media screen and (min-width:650px) and (max-width:950px){
     .connectivity-container{
         text-align: left;
+        width: 630px;
     }
+    .connectivity-container .heading-section {
+        text-align: center;
+    }
+    /* .connectivity-container .overlay-heading{
+        font-size: 3.5em;
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+    .connectivity-container .normal-h1{
+        position: absolute;
+        transform: translate(-50%,0%);
+        letter-spacing: 2px;
+        padding-bottom: 0.3em;
+        border-bottom: 3px solid darkblue;
+        font-size: 2em;
+    } */
     .connectivity-wrap{
         display: flex;
         flex-direction: column;
@@ -885,10 +915,13 @@ button:hover{
     }
     .map-container img{
         height: 400px;
-        width: 600px;
+        width: 500px;
     }
 }
-@media screen and (min-width:900px) and (max-width:1100px){
+@media screen and (min-width:950px) and (max-width:1300px){
+    .connectivity-container{
+        width: 900px;
+    }
     .connectivity-column{
         padding: 0;
         margin: 0;
