@@ -181,9 +181,9 @@ button:hover{
 .amenities-container{
     position: relative;
     text-align: center;
-    max-width: 1300px;
+    max-width: 1400px;
     margin: 2em auto;
-    margin-bottom: 0;
+    margin-bottom: 3.5em;
 }
 .amenities-container .heading-section{
     position: relative;
@@ -206,23 +206,79 @@ button:hover{
     border-bottom: 4px solid darkblue;
     font-size: 2em;
 }
-.amenities{
-    margin: 3em 2em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+.amenities_bottom{
+    display: flex;
+    margin-top: 3rem;
+}
+.amenities_bottom img{
+    flex: 3;
+    width: 50%;
+}
+.amenities-container .amenities{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: start;
+    margin-left: 2.5rem;
+}
+.amenities-container .amenity{
+    background-color: #F1FFE7;
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+
+/* Amenities Section Medium*/
+.amenities-container-medium{
+    position: relative;
     text-align: center;
-    grid-gap: 2em;
+    margin: 2em auto;
+    margin-bottom: 0;
 }
-.amenities img{
+.amenities-container-medium .heading-section{
+    position: relative;
+    margin-bottom: 2em;
+}
+.amenities-container-medium .overlay-heading{
+    color:rgba(148, 148, 148, 0.3);
+    font-size: 5em;
+    letter-spacing: 5px;
+    font-weight:900;
+    border-bottom: 1px solid grey;
+    display: inline-block;
+}
+.amenities-container-medium .normal-h1{
+    position: absolute;
+    bottom:0%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    letter-spacing: 2px;
+    border-bottom: 4px solid darkblue;
+    font-size: 2em;
+}
+.amenities-wrap{
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(img/gallery-1-sm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
+    padding: 2.5em;
 }
-.amenities p{
-    line-height: 1.2;
-    margin: 1em 0.5em;
-    white-space: nowrap;
+.amenities-container-medium .amenities{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: start;
+    margin:0 15%;
+}
+.amenities-container-medium .amenity{
+    background-color: #F1FFE7;
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 8px;
+    font-size: 1.1em;
 }
 
 /* Form Popup Section */
@@ -442,6 +498,7 @@ button:hover{
 /* Highlights Section */
 .highlights-section{
     text-align: center;
+    margin: 3em 0;
 }
 .highlights-section .heading-section{
     position: relative;
@@ -485,7 +542,8 @@ button:hover{
 .connectivity-section{
     position: relative;
     overflow: hidden;
-    background-color: #f4e9e3;
+    background-color: #f1ffe7;
+    padding:0 2em;
 }
 .connectivity-container{
     text-align: center;
@@ -811,6 +869,7 @@ button:hover{
         padding-bottom: 0.5em;
         display: inline-block;
         border-bottom: 4px solid darkblue;
+        font-size: 2em;
     }
 }
 
@@ -842,6 +901,28 @@ button:hover{
     .highlights-build:hover {
         cursor: pointer;
         transform: translate(0, -8px);
+    }
+}
+@media screen and (min-width:800px) {
+    .highlights-section .medium-h1{
+        display: none;
+    }   
+}
+@media screen and (max-width:800px) {
+    
+    .highlights-section .overlay-heading{
+        display: none;
+    }
+    .highlights-section .normal-h1{
+        display: none;
+    }
+    .highlights-section .medium-h1{
+        margin: 1em;
+        margin-bottom: 0.5em;
+        padding-bottom: 0.5em;
+        display: inline-block;
+        border-bottom: 4px solid darkblue;
+        font-size: 2em;
     }
 }
 
@@ -894,6 +975,30 @@ button:hover{
     .map-container img{
         height: 300px;
         width: 400px;
+    }
+}
+@media screen and (min-width:800px){
+    .connectivity-section .medium-h1{
+        display: none;
+    }
+}
+@media screen and (max-width:800px) {
+    .connectivity-container .heading-section{
+        text-align: center;
+    }
+    .connectivity-section .overlay-heading{
+        display: none;
+    }
+    .connectivity-section .normal-h1{
+        display: none;
+    }
+    .connectivity-section .medium-h1{
+        margin: 1em;
+        margin-bottom: 0.5em;
+        padding-bottom: 0.5em;
+        display: inline-block;
+        border-bottom: 4px solid darkblue;
+        font-size: 2em;
     }
 }
 
@@ -978,5 +1083,75 @@ button:hover{
 @media screen and (max-width:800px){
     .glide__slide img{
         width: 80%;
+    }
+}
+@media screen and (min-width:800px){
+    .gallery-container .medium-h1{
+        display: none;
+    }
+}
+@media screen and (max-width:800px) {
+    .gallery-container .overlay-heading{
+        display: none;
+    }
+    .gallery-container .normal-h1{
+        display: none;
+    }
+    .gallery-container .medium-h1{
+        margin: 1em;
+        margin-bottom: 0.5em;
+        padding-bottom: 0.5em;
+        display: inline-block;
+        border-bottom: 4px solid darkblue;
+        font-size: 2em;
+    }
+}
+
+/* Amenities Section */
+@media screen and (max-width:1000px) {
+    .amenities-container-medium .amenities{
+        margin: 0 8%;
+    }
+}
+@media screen and (max-width:800px){
+    .amenities-container-medium .amenities{
+        margin: 0 3%;
+    }
+}
+@media screen and (max-width:1000px){
+    .amenities-container{
+        display: none;
+    }
+    .amenities-container-medium{
+        display: block;
+    }
+}
+@media screen and (min-width:1000px){
+    .amenities-container-medium{
+        display: none;
+    }
+    .amenities-container{
+        display: block;
+    }
+}
+@media screen and (min-width:800px){
+    .amenities-container-medium .medium-h1{
+        display: none;
+    }
+}
+@media screen and (max-width:800px) {
+    .amenities-container-medium .overlay-heading{
+        display: none;
+    }
+    .amenities-container-medium .normal-h1{
+        display: none;
+    }
+    .amenities-container-medium .medium-h1{
+        margin: 1em;
+        margin-bottom: 0.2em;
+        padding-bottom: 0.5em;
+        display: inline-block;
+        border-bottom: 4px solid darkblue;
+        font-size: 2em;
     }
 }
